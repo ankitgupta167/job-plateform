@@ -8,7 +8,7 @@ import { config } from "dotenv";
  import { errorMiddleware } from "./middlewares/error.js";
  import cookieParser from "cookie-parser";
  import fileUpload from "express-fileupload";
-
+ 
 const app = express();
 config({ path: "./config/.env" });
 
