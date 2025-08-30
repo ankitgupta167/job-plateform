@@ -8,6 +8,11 @@ import { config } from "dotenv";
  import { errorMiddleware } from "./middlewares/error.js";
  import cookieParser from "cookie-parser";
  import fileUpload from "express-fileupload";
+ // server.js or app.js (top of file) .MAINE ye changes kiya dotenv lo laya
+
+import dotenv from "dotenv";
+dotenv.config();
+
  
 const app = express();
 config({ path: "./config/.env" });
