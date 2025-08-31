@@ -8,10 +8,6 @@ import { config } from "dotenv";
  import { errorMiddleware } from "./middlewares/error.js";
  import cookieParser from "cookie-parser";
  import fileUpload from "express-fileupload";
- // server.js or app.js (top of file) .MAINE ye changes kiya dotenv lo laya
-
-import dotenv from "dotenv";
-dotenv.config();
 
  
 const app = express();
@@ -38,6 +34,12 @@ app.use(
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/job", jobRouter);
 app.use("/api/v1/application", applicationRouter);
+
+app.get("/",(req, res,next)=>{return res.status(200).json({
+    success: true,
+    message : "hello world ka hal cal ba"
+
+})})
  dbConnection();
 
   app.use(errorMiddleware);
