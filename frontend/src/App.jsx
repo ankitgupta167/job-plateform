@@ -25,8 +25,8 @@ const App = () => {
         const response = await axios.get(
           //  "http://localhost:4000/api/v1/user/getuser",
 
-
-           "https://job-plateform.onrender.com//api/v1/user/getuser",
+// https://job-plateform.onrender.com
+           "https://job-plateform.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }
