@@ -37,7 +37,7 @@ app.use("/api/v1/application", applicationRouter);
 
 app.get("/",(req, res,next)=>{return res.status(200).json({
     success: true,
-    message : "hello world ka hal cal ba"
+    message : "hello world ka hal cal ba  kaye project nhi chal rha h"
 
 })})
  dbConnection();
