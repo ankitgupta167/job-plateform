@@ -78,6 +78,8 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh;
+   color: rgb(195, 51, 51); 
+  /* background-color:green; */
 }
 .authPage .container {
   flex: 1;
@@ -86,6 +88,7 @@ p {
   justify-content: center;
   background: #fff;
   padding: 20px 20px;
+  background-color: rgb(235, 165, 169);
 }
 .authPage .container .header {
   display: flex;
@@ -328,6 +331,7 @@ p {
   .heroSection .container .title {
     z-index: 1;
     text-align: center;
+    background-color: rgba(161, 223, 225, 0.887);
   }
   .heroSection .container .title h1,
   .heroSection .container .title p {
