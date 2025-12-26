@@ -5,6 +5,8 @@
       Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
     httpOnly: true, // Set httpOnly to true
+    secure: true,  // changes for upload
+    sameSite: "None", // this 
   };
 
   res.status(statusCode).cookie("token", token, options).json({
