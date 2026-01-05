@@ -13,13 +13,21 @@ import { config } from "dotenv";
 const app = express();
 config({ path: "./config/.env" });
 
-app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL],
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
-);
+const cors = require("cors");
+
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+   method: ["GET", "POST", "DELETE", "PUT"],
+  credentials: true,
+}));
+
+// app.use(
+//   cors({
+//     origin: [process.env.FRONTEND_URL],
+//     method: ["GET", "POST", "DELETE", "PUT"],
+//     credentials: true,
+//   })
+// );
 
  app.use(cookieParser());
 app.use(express.json());
